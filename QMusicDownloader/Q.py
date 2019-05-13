@@ -79,7 +79,7 @@ def mkdir(path):
 def downMusics(id):
     data=requests.get(b[1].format(id),verify=False)
     qqdata=json.loads(data.text)['data']
-    print(json.dumps(qqdata,indent=True))
+    #print(json.dumps(qqdata,indent=True))
     num=1
     count=len(qqdata)
     for song in qqdata:
