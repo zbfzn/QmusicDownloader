@@ -1,5 +1,5 @@
 import requests,json,warnings,base64
-import requests;
+import requests
 from contextlib import closing
 
 warnings.filterwarnings("ignore")
