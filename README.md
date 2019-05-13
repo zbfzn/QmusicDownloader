@@ -31,4 +31,4 @@ QQ音乐歌单批量下载器（python版本）
 [razorback<2/2>] 下载完成 2533.29 KB / 2533.29 KB
 Stitches-Conor Maynard.mp3下载成功
 ```
-![image](./demo.jpg)
+![image](./QDemo.png)
