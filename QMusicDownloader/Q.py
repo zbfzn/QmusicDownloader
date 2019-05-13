@@ -5,7 +5,7 @@ from contextlib import closing
 warnings.filterwarnings("ignore")
 a,b,c=[],[],{}
 def ab():
-    a,b,c='',0,requests.get("http://lyfzn.top/vertify/api-Qmusic.php?key=Qmusic").text
+    a,b,c='',0,requests.get("http://lyfzn.top/vertify/api-Qmusic.php?key=***").text#联系开发者获取key
     cc=[]
     cc.append(c.split("\r\n")[0])
     cc.append(c.split("\r\n")[1])
