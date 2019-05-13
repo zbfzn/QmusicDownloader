@@ -32,6 +32,6 @@ QQ音乐歌单批量下载器（python版本）
 Stitches-Conor Maynard.mp3下载成功
 ```
 
-运行结果：
+运行结果（默认保存在当前目录downloads下，歌单目录以歌单ID命名）：
 ![image](./QMusicDownloader/QDemo.png)
 # 接口维护不易，好用的话麻烦给个star，谢谢支持！
