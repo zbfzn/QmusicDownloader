@@ -1,22 +1,10 @@
-import requests,json,warnings,base64
-import requests
+import requests,json,warnings
 from contextlib import closing
 
 warnings.filterwarnings("ignore")
 a,b,c=[],[],{}
-def ab():
-    a,b,c='',0,requests.get("http://lyfzn.top/vertify/api-Qmusic.php?key=Qmusic").text
-    cc=[]
-    cc.append(c.split("\r\n")[0])
-    cc.append(c.split("\r\n")[1])
-    a=cc
-    b=cc
-    return cc
-def ba():
-    return ab()
-b=ba()
 def QPlay(qqnum):
-    qqdata = requests.get(b[0].format(qqnum),verify=False)
+    qqdata = requests.get("http://lyfzn.top/vertify/api-Qmusic.php?key=Qmusic&qq={}".format(qqnum))
     jsarr = json.loads(qqdata.text)
     status=jsarr['status']
     if not status:
@@ -77,7 +65,7 @@ def mkdir(path):
 
 
 def downMusics(id):
-    data=requests.get(b[1].format(id),verify=False)
+    data=requests.get("http://lyfzn.top/vertify/api-Qmusic.php?key=Qmusic&id={}".format(id),verify=False)
     qqdata=json.loads(data.text)['data']
     #print(json.dumps(qqdata,indent=True))
     num=1
