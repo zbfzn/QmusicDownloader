@@ -22,8 +22,10 @@ def QPlay(qqnum):
     print("--"*20)
     print("**歌单列表**")
     for diss in data:
-        playlists_name.append(diss['title'])
-        playlists_id.append(diss['dissid'])
+        if diss['tid']==0:
+            continue
+        playlists_name.append(diss['diss_name'])
+        playlists_id.append(diss['tid'])
     playlist=dict(zip(playlists_name,playlists_id))
     i=0
     ids=[]
