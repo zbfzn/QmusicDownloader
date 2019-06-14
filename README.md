@@ -1,5 +1,6 @@
 # QmusicDownloader
-QQ音乐歌单批量下载器（python版本）
+QQ音乐歌单批量下载器（python版本）  
+2019-06-14 可用  
 
 # 使用
 
